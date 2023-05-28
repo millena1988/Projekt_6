@@ -1,0 +1,236 @@
+@use '../../components/buttons' as button;
+@use '../../components/details';
+@use '../../utilities/responsive';
+
+.about {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    padding: var(--section-gap) 4rem;
+    margin-left: -20rem;
+    overflow: hidden;
+
+
+
+    &__inner {
+        grid-column: inner;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap-s);
+        padding: -5rem;
+    
+
+        @include responsive.max(64rem) {
+            grid-template-columns: 1fr;
+            padding: 0 var(--gap-xl);
+        }
+
+        @include responsive.max(40rem) {
+            padding: 0 var(--gap-m);
+        }
+
+        @include responsive.max(30rem) {
+            padding: 0;
+        }
+
+    }
+
+    &__image {
+        margin: 0;
+        position: relative;
+
+        img {
+            display: block;
+        }
+
+        .black-box {
+            right: calc( var(--gap-l) * -1);
+            bottom: calc( var(--gap-l) * -1);
+            z-index: -1;
+        }
+
+        @include responsive.max(64rem) {
+            aspect-ratio: 1 / 1;
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &__content {
+        @include responsive.max(64rem) {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: var(--section-gap-inner);
+        }
+    }
+
+    &__title {
+        color: #fff;
+        margin-top: 0;
+        margin-left: 3rem;
+        width: 180%;
+        font-size: 6rem;
+        
+
+        @include responsive.max(64rem) {
+            
+        }
+    }
+
+    &__excerpt {
+        
+        p {
+            margin: 0;
+
+            & + p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: var(--gap-l);
+    }
+    
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 4rem;
+        gap: var(--gap-m);
+        transform: skewX( -15deg );
+
+        @include responsive.max(40rem) {
+            gap: var(--gap-s);
+            justify-content: center;
+        }
+    }
+
+    &__buttons_2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 5px;
+        transform: skewX( -15deg );
+
+        @include responsive.max(40rem) {
+            gap: var(--gap-s);
+            justify-content: center;
+        }
+    }
+
+    &__button_1 {
+        @include button.default(
+            $background: var(--color-dark-1333),
+            $color: var(--color-light), 
+            $border-color: var(--color-dark-1333),
+            $hover-background: var(--color-dark-1555)
+        );
+    }
+    &__button_2 {
+        @include button.default(
+            $background: var(--color-dark-1444),
+            $color: var(--color-light), 
+            $border-color: var(--color-dark-900),
+            $hover-background: var(--color-dark-1666)
+        );
+    }
+
+    &__button_3 {
+
+        @include button.default(
+            $background: var(--color-dark-1444),
+            $color: var(--color-light), 
+            $border-color: var(--color-dark-900),
+            $hover-background: var(--color-dark-1666)
+        );
+
+        background-color: #fff;
+        color: black;  
+        
+    }
+
+
+
+    &__button_4 {
+        @include button.default(
+            $background: var(--color-dark-1333),
+            $color: var(--color-light), 
+            $border-color: var(--color-dark-1333),
+            $hover-background: var(--color-dark-1555)
+        );  
+
+        margin-left: 0;
+        gap: 10px;
+        display: flex;  
+     }
+
+
+    &__button_5 { 
+        @include button.default(
+            $background: var(--color-dark-1333),
+            $color: var(--color-light), 
+            $border-color: var(--color-dark-1333),
+            $hover-background: var(--color-dark-1555)
+        );  
+
+        position: absolute;
+        margin-left: 1275px;
+        margin-top: -100px;
+
+
+    }
+
+}
+
+
+.black-box {
+    @include details.frame;
+    background-color: var(--color-dark);
+    width: 333px;
+    height: 333px;
+    position: absolute;
+
+    @include responsive.max(40rem) {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .article {
+        padding: 30px;
+        gap: 30px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 250px);   
+        grid-template-rows: 250px 250px 250px;  
+    }
+    
+    .article_item {
+        position: relative;
+    }
+
+    .article__item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .article__item--tall {
+        grid-row: span 2;
+    }
+    
+    .article__item--wide {
+        grid-column: span 2;
+    }
+    
+    .article__item:hover .gallery__overlay {
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+   
+ }

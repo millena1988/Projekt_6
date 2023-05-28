@@ -1,0 +1,155 @@
+
+.naglowek__header {
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px;
+    align-items: start;
+    margin-bottom: -80px;
+    }
+
+.naglowek__title {
+    color: #3F4A53;
+    margin-left: 180px;
+    font-size: 70px;
+}
+
+.naglowek__title_2 {
+    color: #0584FF;
+    margin-left: 445px;
+    margin-top: -110px;
+    font-size: 50px;
+}
+
+     
+.article__3 {
+    
+    margin: 100px;
+    line-height: 5;
+    font-size: 13px;
+ }
+
+
+.pudla {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-left: 61px;
+    gap: 65px;
+}
+
+.pudlo {
+    height: 200px;
+    width: 406px;
+    background-color: #3F4A53;
+    display: grid;
+    grid-template-columns: 300px 100px;
+}
+
+.pudlo__2 {
+    height: 200px;
+    width: 406px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 300px 100px;
+}
+
+
+.pudlo__text {
+    margin: 5px;
+}
+
+.pudlo__trojkat {
+    margin: 6px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #007bff transparent;
+    margin-top: 100px;
+}
+
+.pudlo__trojkat__2 {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent rgb(112, 112, 112, 21%) transparent;
+    margin-top: 99px;
+}
+
+.t__1 {
+        position: absolute;    
+        margin-top: -35px;
+        margin-left: 40px;
+        font-size: 33px;
+        color: #fff;
+        font-weight: 400;
+        font-family: var(--font-serif);
+    }
+    
+.t__2 {
+        position: absolute;  
+        margin-top: -70px;  
+        margin-bottom: 100px;
+        margin-left: 34px;
+        font-weight: 400;
+        font-size: 70px;
+        color: #fff;
+        font-weight: 400;
+        font-family: var(--font-serif);
+        cursor: pointer;
+        :hover {
+            color: #f16412;
+        }
+    }
+
+.t__3 {
+    color: #707070;
+    font-family: var(--font-tabela);
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 125px;
+    margin-left: 40px;
+}
+
+.strzalka {
+    width: 80px;
+}
+
+.strzalka-link {
+    width: 40px;
+    color: #d31e1e;
+    font-family: var(--font-serif);
+    display: grid;
+    grid-template-columns: 80px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 360px;
+    justify-items: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: color 0.2s;
+}
+
+a.strzalka-link:hover svg {
+    transform: translate(0.5rem, 0.15rem);
+    
+}
+
+a.strzalka-link svg {
+    transform: translate(0, 0.15rem);
+    transition: transform 0.2s;
+    
+}
+
+.strzalka-link--white line {
+    stroke: #fff;
+}
+
+
+
+
+
+    

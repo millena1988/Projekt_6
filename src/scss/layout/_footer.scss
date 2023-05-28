@@ -1,0 +1,233 @@
+@use '../components/details';
+@use '../utilities/responsive';
+
+
+.stopka {
+    background-color: #2B3135;
+    display: flex;
+    background-size: cover;
+}
+
+
+.stopka__inner {
+    background-color: #2B3135;
+    display: grid;
+    grid-template-columns: 550px 200px 200px;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 170px;
+}
+
+.zawartosc {
+    margin: 5px;
+}
+
+.z__1 {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.z__2 {
+    color: #fff;
+    margin-top: 110px;
+    font-family: var(--font-tabela);
+    justify-content: space-between;
+}
+
+.z__3 {
+    margin-left: 200px;
+}
+
+
+.frisk {
+    margin-top: 150px;
+}
+
+
+.fb {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200px;
+    gap: 25px;
+    cursor: pointer;
+}
+
+
+.adres {
+    margin-top: 40px;
+    color: #fff;
+}
+
+
+.copyright {
+    color: var(--color-dark-500);
+    text-align: start;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    @include responsive.max(40rem) {
+             padding-left: var(--gap-m);
+             padding-right: var(--gap-m);
+    }
+}
+
+
+.zawartosc__list {
+    position: absolute;
+    
+    color: #fff;
+    position: absolute;
+    margin-left: 20px;
+}
+
+
+.nazwy {
+    color: #fff;
+    display: block;
+    gap: 25px;
+    margin-left: -10px;
+    cursor: pointer;
+    :hover {
+        color: #FD3E1D;
+    }
+
+}
+
+
+.banner__glowny {
+    border: 20px solid #fff;
+    background-image: url(../assets/images/Image25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+    width: 1376px;
+    margin-left: 70px;
+    margin-top: 50px;
+    opacity: 80%;
+}
+
+
+.banner__text {
+    margin: 45px;
+    font-family: var(--font-serif);
+    font-size: 90px;
+    margin-top: -100px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.banner__text__2 {
+    margin: 45px;
+    font-family: var(--font-serif);
+    font-size: 45px;
+    margin-top: -290px;
+    opacity: 60%;
+    cursor: pointer;
+
+}
+
+
+.banner__trojkat {
+    margin: 6px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #007bff transparent;
+    margin-top: -145px;
+    margin-left: 1236px;
+    z-index: 2;
+}
+
+
+.banner__1 {
+    position: absolute;    
+    margin-top: -35px;
+    margin-left: 40px;
+    font-size: 33px;
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--font-serif);
+}
+
+.banner__2 {
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+
+.banner__strzalka {
+        margin-bottom: 40px;
+        margin-left: 100px;
+}
+    
+
+.banner__strzalka {
+    width: 80px;
+}
+
+
+.banner__strzalka-link {
+    width: 40px;
+    color: #fff;
+    font-family: var(--font-serif);
+    display: grid;
+    grid-template-columns: 80px;
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 1293px;
+    justify-items: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: color 0.2s;
+}
+
+a.banner__strzalka-link:hover svg {
+    transform: translate(0.5rem, 0.15rem);
+    
+}
+
+a.banner__strzalka-link svg {
+    transform: translate(0, 0.15rem);
+    transition: transform 0.2s;
+    
+}
+
+.banner__strzalka-link--white line {
+    stroke: #fff;
+}
+
+.siatka {
+    width: 460px;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 460px;
+    background-color: #435665;
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
+    
+.czesc {
+    margin: 5px;
+    border: 10px solid #435665;
+    
+}
+
+.czesc__text {
+    font-family: var(--font-tabela);
+    color: #fff;
+}
+
+
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/images/map@2x.png);
+    background-size: cover;
+    background-position: center;
+}
+
